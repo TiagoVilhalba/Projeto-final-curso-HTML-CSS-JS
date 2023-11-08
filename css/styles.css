@@ -1,0 +1,357 @@
+                            /*estrutura*/
+
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    html{
+        font-family: Arial;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: #dcdcdc;
+    }
+    header{
+        background: linear-gradient(to right, #000, #6A5ACD);
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        header{
+            background: linear-gradient(to right, #000, #6A5ACD);
+            color: #fff;
+            font-size: 1.6rem;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+    footer{
+        background: linear-gradient(to right, #000, #6A5ACD);
+        color: #fff;
+        text-shadow: 2px 2px 2px #000;
+        font-size: 1.8rem;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    @media(min-width: 300px) and (max-width: 600px){
+        .nocell{
+            display: none;
+        }
+    }
+    .top-content{
+        font-size: 1.6rem;
+        background-color: #fff;
+        padding: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 4rem;
+        max-width: 80%;
+        padding-top: 3rem;
+        border-radius: 20px;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        .top-content{
+            font-size: 1.6rem;
+        background-color: #fff;
+        padding: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        max-width: 80%;
+        padding-top: 3rem;
+        border-radius: 20px;
+        }
+    }
+    .content{
+        font-size: 1.6rem;
+        background-color: #fff;
+        padding: 1.5rem;
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .body-content{
+        font-size: 1.6rem;
+        background: linear-gradient(to right, #000, #6A5ACD);
+        padding: 1.5rem;
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-top: 25rem;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        .body-content{
+            font-size: 1.6rem;
+            background: linear-gradient(to right, #000, #6A5ACD);
+            padding: 1.5rem;
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 100%;
+            padding-top: 16rem;
+        }
+    }
+
+                            /*fontes*/
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        color: #000;
+    }
+    h2{
+        font-size: 1.9rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    h2#top-tittle{
+        font-size: 3rem;
+    }
+    h2.body-tittle{
+        font-size: 2.5rem;
+        color: #0000cd;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    h4{
+        font-size: 1.6rem;
+    }
+    h5{
+        font-size: 3rem;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+    }
+    .tec{
+        color: #000;
+        text-shadow: none;
+    }
+
+                        /*controle de imagens*/
+
+    figure{
+        text-align: center;
+    }
+    .site-img{
+        border-radius: 5px;
+        width: 70%;
+        height: 55%;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        .site-img{
+            border-radius: 5px;
+            width: 90%;
+            height: 70%;
+        }
+    }
+    .body-img{
+        width: 95%;
+        height: 80%;
+    }
+    #wpp{
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        margin-top: 6rem;
+        margin-right: 5px;
+        z-index:1;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        #wpp{
+            right: 0;
+            bottom: 0;
+            position: fixed;
+            text-align: center;
+            margin-top: 6rem;
+            margin-right: 1px;
+            z-index:1;
+        }
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        .wpp-img{
+            width: 65%;
+            height: 25%;
+        }
+    }
+    .avaliacoes{
+        width: 30%;
+        height: 20%;
+    }
+
+                            /*controle de grids*/
+
+    #content-grid{
+        background-color: #fff;
+        color: #000;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .grid div{
+        background-color: #fff;
+        text-align: center;
+        padding: 2px;
+    }
+    #body-grid-content{
+        text-align: center;
+        border-radius: 20px;
+    }
+    .body-grid{
+        display: grid;
+        grid-template-columns: 480px 1fr;
+        grid-gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: #fff;
+        text-shadow: 1px 1px #000;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        .body-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+            color: #fff;
+            text-shadow: 1px 1px #000;
+        }
+    }
+
+                            /**controle de botoes**/
+
+    .action-button{
+        background-color: #00ce00;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        border-radius: 20px;
+        text-shadow: 1px 1px 2px #000;
+    }
+    #btn-view{
+        background-color: #fff;
+    }
+
+                            /**controle de navegação**/
+
+    nav{
+        text-align: right;
+        font-size: 1.6rem;
+        word-spacing: 10px;
+        margin-right: 5%;
+        padding-bottom: 5px;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        nav{
+            text-align: center;
+            font-size: 1.6rem;
+            word-spacing: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    a:hover{
+        color: #fff;
+        border-bottom: solid #fff;
+        text-shadow: 1px 1px 2px #000;
+    }
+    #cursos{
+        padding-top: 40rem;
+    }
+    #dicas{
+        padding-top: 50rem;
+    }
+    #body{
+        text-align: center;
+        padding: 1px;
+        padding-bottom: 5px;
+    }
+    #top-logo{
+        width: 15%;
+        height: 2%;
+        margin-left: 16rem;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        #top-logo{
+            width: 50%;
+            height: 20%;
+            margin: 0 auto;
+        }
+    }
+    #photo{
+        border-radius: 100%;
+        width: 10%;
+        height: 2.5%;
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        #photo{
+            border-radius: 100%;
+            width: 60%;
+            height: 40%;
+        }
+    }
+    @media(min-width: 300px) and (max-width: 1200px){
+        div.video{
+            position: relative;
+            padding-bottom: 50%;
+        }
+        div.video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    }
+    li{
+        text-align: left;
+        font-weight: bold;
+        margin-left: 3rem;
+    }
+    .tiago{
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+        background: linear-gradient(to right, #000, #6A5ACD);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    figcaption{
+        background: linear-gradient(to right, #000, #6A5ACD);
+        width: 70%;
+        padding: 1rem;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    .personalizacao{
+        background-color: #ffff00;
+        text-align: center;
+        font-size: 1.8;
+        font-weight: bold;
+        padding: 1rem;
+        width: 60%;
+        border-radius: 20px;
+        color: #000;
+        margin: 0 auto;
+        text-shadow: none;
+    }
